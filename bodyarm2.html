@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BODYARMOR x NHL Sweepstakes</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    /* Hero Section */
+    .hero {
+      background: url('https://www.drinkbodyarmor.com/wp-content/uploads/2023/06/BA_Homepage_Hero.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffffff;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .hero .btn {
+      background-color: #e60012;
+      color: #ffffff;
+      padding: 1rem 2rem;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .hero .btn:hover {
+      background-color: #c50010;
+    }
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #e60012;
+    }
+    /* How It Works */
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-align: center;
+    }
+    .step {
+      flex: 1 1 250px;
+      margin: 20px;
+    }
+    .step img {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+    .step h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    /* Prizes */
+    .prizes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-align: center;
+    }
+    .prize {
+      flex: 1 1 250px;
+      margin: 20px;
+      border: 2px solid #e60012;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    .prize:hover {
+      transform: scale(1.05);
+    }
+    .prize img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .prize h4 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+    /* Call to Action */
+    .cta {
+      background-color: #e60012;
+      color: #ffffff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .cta .btn {
+      background-color: #ffffff;
+      color: #e60012;
+      padding: 1rem 2rem;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .cta .btn:hover {
+      background-color: #f2f2f2;
+    }
+    /* Footer */
+    footer {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #ffffff;
+      margin: 0 10px;
+      font-size: 0.9rem;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .steps, .prizes {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Win Big. Hydrate Better.</h1>
+      <p>Enter for a chance to score exclusive NHL experiences and BODYARMOR gear.</p>
+      <button class="btn">Enter Now</button>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section>
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <img src="https://img.icons8.com/ios-filled/100/000000/buy.png" alt="Buy BODYARMOR">
+        <h3>Buy BODYARMOR</h3>
+        <p>Purchase your favorite BODYARMOR at participating retailers.</p>
+      </div>
+      <div class="step">
+        <img src="https://img.icons8.com/ios-filled/100/000000/qr-code.png" alt="Scan QR Code">
+        <h3>Scan & Enter</h3>
+        <p>Scan the QR code on the bottle or click below to enter.</p>
+      </div>
+      <div class="step">
+        <img src="https://img.icons8.com/ios-filled/100/000000/trophy.png" alt="Win Prizes">
+        <h3>Win Prizes</h3>
+        <p>Score prizes instantly or enter for a chance to win the ultimate NHL experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prizes -->
+  <section>
+    <h2>Prizes</h2>
+    <div class="prizes">
+      <div class="prize">
+        <img src="https://www.drinkbodyarmor.com/wp-content/uploads/2023/06/BA_NHL_GrandPrize.jpg" alt="Grand Prize">
+        <h4>Grand Prize</h4>
+        <p>2 Tickets to the 2026 NHL International Event with VIP experience.</p>
+      </div>
+      <div class="prize">
+        <img src="https://www.drinkbodyarmor.com/wp-content/uploads/2023/06/BA_InstantWin_Fanatics.jpg" alt="Fanatics Gift Codes">
+        <h4>Fanatics Gift Codes</h4>
+        <p>Win $10–$100 gift codes to gear up your fandom.</p>
+      </div>
+      <div class="prize">
+        <img src="https://www.drinkbodyarmor.com/wp-content/uploads/2023/06/BA_InstantWin_Tickets.jpg" alt="Team Game Tickets">
+        <h4>Team Game Tickets</h4>
+        <p>Score tickets in 12 major NHL markets.</p>
+      </div>
+      <div class="prize">
+        <img src="https://www.drinkbodyarmor.com/wp-content/uploads/2023/06/BA_InstantWin_Gear.jpg" alt="BODYARMOR Gear">
+        <h4>BODYARMOR Gear</h4>
+        <p>Win branded bottles, hoodies, duffels, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Ready to Hydrate Like a Pro?</h2>
+    <button class="btn">Enter Now</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 BODYARMOR Sports Drink. All rights reserved.</p>
+    <div>
+      <a href="#">Terms & Conditions</a> | 
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">FAQ</a>
+    </div>
+  </footer>
+</body>
+</html>
